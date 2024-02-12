@@ -455,6 +455,12 @@ h2 {
     margin: 10px;
   }
 
+  .once-model h3,
+  .bonus-model h3 {
+    text-transform: uppercase;
+
+  }
+
   .subs-model {
     width: 80%;
     z-index: 10;
@@ -464,6 +470,7 @@ h2 {
 
   .subs-model h3 {
     font-weight: bolder;
+    text-transform: uppercase;
   }
 
   .subs-model p {
@@ -486,7 +493,7 @@ h2 {
     z-index: 1;
     margin-left: -50px;
     padding-left: 50px;
-    background-color: #9b9898;
+    background-color: #bbb8b8;
   }
 
   .price {
@@ -598,8 +605,7 @@ h2 {
 
 .our-work-wrapper {
   width: 100%;
-  align-items: center;
-  justify-content: center;
+ 
 }
 
 .our-work-item {
@@ -906,6 +912,23 @@ footer {
     background: transparent;
   }
 
+  .privacy-policy-body {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 1rem auto;
+      font-size: 1.5rem;
+      padding: 3rem;
+  }
+
+  .privacy-policy-body > p {
+    margin: 1rem;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
 /* ---------- 	MEDIA QUERIEs ----------  */
 
 
@@ -1062,6 +1085,9 @@ footer {
     padding: 0;
     margin: .2rem;
   }
+  .price-item > h3 {
+    text-transform: uppercase;
+  }
 
   .subs-model {
     width: 90%;
@@ -1090,7 +1116,7 @@ footer {
     z-index: 1;
     margin: 0px;
     padding: 0px;
-    background-color: #9b9898;
+    background-color: #7e0d0d;
   }
 
   .about-img1,
