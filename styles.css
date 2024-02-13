@@ -13,6 +13,11 @@
   src: url(LeagueSpartan-Bold.ttf);
 }
 
+@font-face {
+  font-family: LogoFont;
+  src: url(ZELDA\ Free.ttf);
+}
+
 /* ---------- GLOBAL CLASSES ---------- */
 
 body {
@@ -78,27 +83,20 @@ h2 {
     background-color: #E2EFF3;
   }
   
-  
 
-  .logo {
-    width: 5rem;
-    position: fixed;
-    top: .5rem;
-    left: 1rem;
-    
-    mix-blend-mode: difference;
-    z-index: 10;
-  }
 
   .logo-text {
     position: fixed;
     top: 1.6rem;
     color: #fff;
-    left: 6rem;
+    left: 1rem;
     font-size: 1.7rem;
-    font-weight: bold;
+    font-weight: 900;
     z-index: 10;
     mix-blend-mode: difference;
+    font-family: LogoFont;
+    font-size: 2.5rem;
+
   }
   
   
@@ -113,6 +111,8 @@ h2 {
     font-size: 1rem;
     font-weight: 400;
   }
+
+ 
   
   .nav {
     width: 100%;
@@ -574,26 +574,40 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba( 0, 212, 255, 0.1 );
-    border-radius: 2rem;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 14px );
-    -webkit-backdrop-filter: blur( 14px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
     position: relative;
     z-index: 2;
+    backdrop-filter: blur(5px);
+  }
+
+  .backdrop {
+    position: absolute;
+    opacity: .9;
+    background-image: url(https://lh3.googleusercontent.com/pw/ABLVV845ZMj4YcHYDS-pfYpXZaN2iIIcz4m15ajldKiHRgs7xEdQIMdbazNgCpzkhjSWT7E2VYKkIqZV6PGInfuLzf_Bsq4tN2WGCIy9CNRnQS_WebEEF3ah=w2400);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+    height: 100%;  
+    border-radius: 5rem;  
+
   }
 
   .ceo-img {
     z-index: 10;
     position: relative;
     width: 70%;
+    
   }
 
   .ceo-text {
+    text-align: center;
     font-size: 150%;
     margin: 1rem;
+    position: relative;
+    z-index: 10;
+    color: white;
+    
   }
 
 /* ---------- Our-work section ----------  */
@@ -1039,9 +1053,6 @@ footer {
     font-size: 16px;
   }
 
-  .logo {
-    display: none;
-  }
 
   .logo-text {
     display: none;

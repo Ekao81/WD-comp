@@ -7,3 +7,6 @@ function sendMail(){
     }
         emailjs.send("service_cbd093i", "template_7viayie",params).then(alert("Email sent!"))
 }
+
+
+
