@@ -13,7 +13,9 @@
   src: url(LeagueSpartan-Bold.ttf);
 }
 
-
+html {
+  overflow-x: hidden;
+}
 
 /* ---------- GLOBAL CLASSES ---------- */
 
