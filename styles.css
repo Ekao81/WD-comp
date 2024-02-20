@@ -13,10 +13,7 @@
   src: url(LeagueSpartan-Bold.ttf);
 }
 
-@font-face {
-  font-family: LogoFont;
-  src: url(ZELDA\ Free.ttf);
-}
+
 
 /* ---------- GLOBAL CLASSES ---------- */
 
@@ -94,7 +91,7 @@ h2 {
     font-weight: 900;
     z-index: 10;
     mix-blend-mode: difference;
-    font-family: LogoFont;
+    font-family: heroFont;
     font-size: 2.5rem;
 
   }
@@ -425,7 +422,8 @@ h2 {
 
   .price-item p {
     font-weight:600;
-    width: 70%;
+    width: 95%;
+    padding: 10px;
   }
 
   .price-item > ul {
@@ -474,8 +472,7 @@ h2 {
   }
 
   .subs-model p {
-    width: 60%;
-    font-size: 120%;
+    font-size: 110%;
   }
 
   .subs-model > span {
@@ -492,7 +489,7 @@ h2 {
   .bonus-model {
     z-index: 1;
     margin-left: -50px;
-    padding-left: 50px;
+    padding-left: 70px;
     background-color: #bbb8b8;
   }
 
@@ -506,6 +503,11 @@ h2 {
     margin: 0;
     font-weight: lighter;
     text-transform: uppercase;
+  }
+
+  .once-model > ul,
+  .bonus-model > ul {
+    margin-top: 3rem;
   }
 /* ---------- About section ----------  */
 
@@ -668,6 +670,9 @@ h2 {
 
 .work-img {
   width: 70%;
+}
+.our-work-item3 {
+  z-index: 10;
 }
 
 /* ---------- Contact section ----------  */
@@ -1011,7 +1016,8 @@ footer {
 
     .hero-background1 {
       height: 250%;
-      width: 100%;
+      width: 130%;
+      left: -15%;
     }
     .header-text1 {
       font-size: 3rem;
@@ -1080,9 +1086,7 @@ footer {
     padding-top: .2rem;
   }
 
-  .nav > .nav-list > li > .li-price  {
-    color: white;
-  }
+  
 
   h2 {
     font-size: 3rem;
@@ -1096,6 +1100,10 @@ footer {
     padding: 0;
     margin: .2rem;
   }
+
+  .price-item ul{
+    margin: .5rem;
+  }
   .price-item > h3 {
     text-transform: uppercase;
   }
@@ -1105,7 +1113,6 @@ footer {
     margin: 1rem;
   }
   .subs-model p {
-    width: 85%;
     margin: 1rem;
     font-size: 100%;
   }
@@ -1127,7 +1134,7 @@ footer {
     z-index: 1;
     margin: 0px;
     padding: 0px;
-    background-color: #7e0d0d;
+
   }
 
   .about-img1,
@@ -1149,6 +1156,8 @@ footer {
 
   .our-work-wrapper {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .our-work-item {
