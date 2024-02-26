@@ -552,7 +552,7 @@ h2 {
   border: none;
   border-radius: 5px;
   text-decoration: none;
-  box-shadow: #f6f7fa 0px 0px 5px, #9db7f0 0px 0px 10px, #020414 0px 0px 15px, #7b6771 0px 0px 20px, #000000 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #3a3437 0px 0px 75px;
+  box-shadow: #ffffff 0px 0px 5px, #fefefe 0px 0px 10px, #020414 0px 0px 15px, #7b6771 0px 0px 20px, #000000 0px 0px 30px, #481510 0px 0px 40px, #c73131 0px 0px 50px, #3a3437 0px 0px 75px;
 }
 
 .work-item-btn:hover {
