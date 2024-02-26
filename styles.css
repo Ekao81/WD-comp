@@ -316,6 +316,7 @@ h2 {
 .price-section {
   background: rgb(22, 22, 22);
   z-index: 5;
+  position: relative;
 }
 
 .price-item-box {
@@ -870,6 +871,7 @@ footer {
   .our-work,
   .about-section {
     padding: 2rem 10px;
+   
   }
 
   .price-item-box {
@@ -919,6 +921,8 @@ footer {
   h2 {
     font-size: 3rem;
     text-align: center;
+    position: inherit;
+    z-index: 10;
   }
 
   .price-item-box {
