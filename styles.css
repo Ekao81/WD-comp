@@ -198,7 +198,7 @@ h2 {
 
 .hero::before {
   background: radial-gradient(
-    400px circle at var(--mouse-x) var(--mouse-y), 
+    600px circle at var(--mouse-x) var(--mouse-y), 
     rgba(192, 183, 183, 0.651), transparent 90%);
   content: '';
   border-radius: inherit;
@@ -226,7 +226,12 @@ h2 {
 }
 
 .ad-circle,
-.ad-circle2 {
+.ad-circle2,
+.ad-circle3,
+.ad-circle4,
+.ad-circle5,
+.ad-circle6,
+.ad-circle7 {
   position: absolute;
   bottom: 4rem;
   right: 5rem;
@@ -244,6 +249,27 @@ h2 {
   top: 6rem;
   left: 5rem;
 }
+.ad-circle3 {
+  top: 12%;
+  left: 40%;
+}
+.ad-circle4 {
+  bottom: 3rem;
+  left: 5rem;
+}
+.ad-circle5 {
+  top: 6rem;
+  right: 5rem;
+}
+.ad-circle6 {
+  bottom: 15%;
+  right: 45%;
+}
+.ad-circle7 {
+  top: 36rem;
+  right: 25rem;
+}
+
 
 /* ------------ NEON ANIMATIONs ------------ */ 
   @keyframes neon3 {
@@ -408,7 +434,7 @@ h2 {
   
   .card::before {
     background: radial-gradient(
-      800px circle at var(--mouse-x) var(--mouse-y), 
+      600px circle at var(--mouse-x) var(--mouse-y), 
       rgba(255, 255, 255, 0.149),
       transparent 40%
     );
@@ -428,6 +454,11 @@ h2 {
 .about-section {
   background-color: #21282b;
   position: relative;
+}
+
+.steps-wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .about-item {
@@ -853,7 +884,10 @@ footer {
 
 @media (max-width: 1190px) {
 
-  
+  .ad-circle3,
+  .ad-circle6{
+    display: none;
+  }
   .centered-box {
     font-size: 6rem;
   }
@@ -896,12 +930,53 @@ footer {
   }
 }
 @media (max-width: 768px) {
+
+  .steps-wrapper {
+    width: 100%;
+  }
   .centered-box {
     font-size: 4rem;
+  }
+  .ad-circle,
+  .ad-circle2,
+  .ad-circle4,
+  .ad-circle5 {
+    font-size: 1.5rem;
+  }
+
+  .ad-circle {
+    bottom: 7rem;
   }
   
 }
 @media (max-width: 588px) {
+
+  .hero {
+    height: 106dvh;
+  }
+
+  .hero::before {
+    background: radial-gradient( 150px circle at var(--mouse-x) var(--mouse-y), rgba(192, 183, 183, 0.651), transparent 90%);
+  }
+
+  .ad-circle
+  {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    bottom: 4rem;
+  }
+
+  .ad-circle2 {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    top: 8rem;
+  }
+
+  
+  .ad-circle4,
+  .ad-circle5 {
+    display: none;
+  }
 
   .centered-box {
     font-size: 3rem;
