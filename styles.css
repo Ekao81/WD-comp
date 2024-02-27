@@ -198,7 +198,7 @@ h2 {
 
 .hero::before {
   background: radial-gradient(
-    600px circle at var(--mouse-x) var(--mouse-y), 
+    300px circle at var(--mouse-x) var(--mouse-y), 
     rgba(192, 183, 183, 0.651), transparent 90%);
   content: '';
   border-radius: inherit;
@@ -1109,6 +1109,17 @@ footer {
     margin: 1rem auto;
   }
 
+  /* Privacy Policy */
+  .privacy-policy-body {
+    font-size: 16px;
+    margin: .5rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .privacy-policy-body > p {
+    margin: 1rem 0;
+  }
 
 }
   
