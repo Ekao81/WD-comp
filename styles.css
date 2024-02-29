@@ -230,14 +230,12 @@ h2 {
 .ad-circle3,
 .ad-circle4,
 .ad-circle5,
-.ad-circle6,
-.ad-circle7 {
+.ad-circle6 {
   position: absolute;
   bottom: 4rem;
   right: 5rem;
   width: fit-content;
   height: fit-content;
-  border-radius: 10em;
   color: black;
   font-size: 2rem;
   z-index: 8;
@@ -245,96 +243,110 @@ h2 {
   text-shadow: -2px 4px 7px rgba(0,0,0,0.66);
 }
 
+.ad-circle {
+  animation: neon 10s infinite ease-in-out;
+  
+}
+
 .ad-circle2 {
   top: 6rem;
   left: 5rem;
+  animation: neon1 10s infinite ease-in-out;
 }
 .ad-circle3 {
   top: 12%;
   left: 40%;
+  animation: neon2 10s infinite ease-in-out;
 }
 .ad-circle4 {
   bottom: 3rem;
   left: 5rem;
+  animation: neon 15s infinite ease-in-out;
 }
 .ad-circle5 {
   top: 6rem;
   right: 5rem;
+  animation: neon1 15s infinite ease-in-out;
 }
 .ad-circle6 {
   bottom: 15%;
   right: 45%;
+  animation: neon2 15s infinite ease-in-out;
 }
-.ad-circle7 {
-  top: 36rem;
-  right: 25rem;
-}
+
 
 
 /* ------------ NEON ANIMATIONs ------------ */ 
-  @keyframes neon3 {
-    0%,10%,20% {
-      text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-      
-    }
-    26% {
-      text-shadow: none;
-    }
-    27% {
-      text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-      
-    }
-    28% {
-      text-shadow: none;
-    }
-    29% {
-      text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-      
-    }
-    30% {
-      text-shadow: none;
-    }
-    31% {
-      text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-      
-    }
-    32%,33%,39% {
-      text-shadow: none;
-      
-    }
-    40%,50%,60%,70%, 80%, 90%, 100%{
-      text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-    }
-    
+  @keyframes neon {
+   10%,20%,30%,40% {
+    color: #000;
+    opacity: 0;
+   }
+
+   51%,60% {
+    opacity: 1;
+    color: white;
+   }
+
+   70%,80%,90%,100% {
+    color: #000;
+    opacity: 0;
+   }
   }
 
-  @keyframes neon2 {
-    0%,10%,20% {
-      text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-      
-    }
-    23%,24% {
-      text-shadow: none;
-    }
-    
-    25%,30%,40%,50%,60%,70%, 80%, 90%, 100%  {
-      text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-    }
-    
-  }
   @keyframes neon1 {
-    0%,10%,20% {
-      text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-      
-    }
-    21%,22% {
-      text-shadow: none;
-    }
+   10%,20% {
+    color: #000;
+    opacity: 0;
+   }
+
+   30%,40% {
+    opacity: 1;
+    color: white;
+   }
+
+   50%,100% {
+    color: #000;
+    opacity: 0;
+   }
+  }
+
+
+  @keyframes neon2 {
+   10%,20% {
+     opacity: 1;
+     color: white;
     
-    23%,30%,40%,50%,60%,70%, 80%, 90%, 100% {
-      text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-    }
+   }
+
+   30%,40% {
+    color: #000;
+    opacity: 0;
+   }
+
+   50%,100% {
+    color: #000;
+    opacity: 0;
+   }
+  }
+
+  @keyframes neon3 {
+   10%,20%,30%,40%,70%  {
+    color: #000;
+    opacity: 0;
     
+   }
+
+   80%,90% {
+    color: white;
+    opacity: 1;
+   }
+
+   100% {
+    color: #000;
+    opacity: 0;
+
+   }
   }
 
   
@@ -885,7 +897,7 @@ footer {
 @media (max-width: 1190px) {
 
   .ad-circle3,
-  .ad-circle6{
+  .ad-circle5{
     display: none;
   }
   .centered-box {
@@ -937,6 +949,7 @@ footer {
   .centered-box {
     font-size: 4rem;
   }
+
   .ad-circle,
   .ad-circle2,
   .ad-circle4,
@@ -962,21 +975,38 @@ footer {
   .ad-circle
   {
     font-size: 1.2rem;
-    margin: 0 auto;
-    bottom: 4rem;
+    bottom: 6rem;
+    animation: neon1 15s infinite ease-in-out;
   }
+
+  .ad-circle6
+  {
+    font-size: 1.2rem;
+    opacity: 1;
+    bottom: 6rem;
+    right: 27%;
+    animation: neon3 15s infinite ease-in-out;
+  }
+  
+
+
 
   .ad-circle2 {
     font-size: 1.2rem;
-    margin: 0 auto;
     top: 8rem;
+    animation: neon1 13s infinite ease-in-out;
+  }
+  .ad-circle4 {
+    font-size: 1.2rem;
+    top: 8rem;
+    animation: neon3 13s infinite ease-in-out;
   }
 
-  
-  .ad-circle4,
+  .ad-circle3,
   .ad-circle5 {
     display: none;
   }
+  
 
   .centered-box {
     font-size: 3rem;
