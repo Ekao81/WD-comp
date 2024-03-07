@@ -218,60 +218,13 @@ h2 {
   font-size: 8rem;
   color: white;
   font-family: heroFont;
+  z-index: 10;
+  text-shadow: 0px 0px 23px rgba(0,0,0,0.77);
 }
 
 
 .cursor {
 	border-left: 4px solid white;
-}
-
-.ad-circle,
-.ad-circle2,
-.ad-circle3,
-.ad-circle4,
-.ad-circle5,
-.ad-circle6 {
-  position: absolute;
-  bottom: 4rem;
-  right: 5rem;
-  width: fit-content;
-  height: fit-content;
-  color: black;
-  font-size: 2rem;
-  z-index: 8;
-  text-align: center;
-  text-shadow: -2px 4px 7px rgba(0,0,0,0.66);
-}
-
-.ad-circle {
-  animation: neon 10s infinite ease-in-out;
-  
-}
-
-.ad-circle2 {
-  top: 6rem;
-  left: 5rem;
-  animation: neon1 10s infinite ease-in-out;
-}
-.ad-circle3 {
-  top: 12%;
-  left: 40%;
-  animation: neon2 10s infinite ease-in-out;
-}
-.ad-circle4 {
-  bottom: 3rem;
-  left: 5rem;
-  animation: neon 15s infinite ease-in-out;
-}
-.ad-circle5 {
-  top: 6rem;
-  right: 5rem;
-  animation: neon1 15s infinite ease-in-out;
-}
-.ad-circle6 {
-  bottom: 15%;
-  right: 45%;
-  animation: neon2 15s infinite ease-in-out;
 }
 
 
@@ -972,42 +925,7 @@ footer {
     background: radial-gradient( 150px circle at var(--mouse-x) var(--mouse-y), rgba(192, 183, 183, 0.651), transparent 90%);
   }
 
-  .ad-circle
-  {
-    font-size: 1.2rem;
-    bottom: 6rem;
-    animation: neon1 15s infinite ease-in-out;
-  }
-
-  .ad-circle6
-  {
-    font-size: 1.2rem;
-    opacity: 1;
-    bottom: 6rem;
-    right: 27%;
-    animation: neon3 15s infinite ease-in-out;
-  }
   
-
-
-
-  .ad-circle2 {
-    font-size: 1.2rem;
-    top: 8rem;
-    animation: neon1 13s infinite ease-in-out;
-  }
-  .ad-circle4 {
-    font-size: 1.2rem;
-    top: 8rem;
-    animation: neon3 13s infinite ease-in-out;
-  }
-
-  .ad-circle3,
-  .ad-circle5 {
-    display: none;
-  }
-  
-
   .centered-box {
     font-size: 3rem;
   }

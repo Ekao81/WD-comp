@@ -5,7 +5,7 @@ function sendMail(){
         message: document.getElementById("message").value,
 
     }
-        emailjs.send("service_cbd093i", "template_7viayie",params).then(alert("Email sent!"))
+        emailjs.send("service_cbd093i", "template_7viayie",params).then(alert("Email odoslaný!"))
 }
 
 
