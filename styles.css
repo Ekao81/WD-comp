@@ -181,41 +181,63 @@ h2 {
 
 /* ---------- HERO section ----------  */
 
-.hero {
+
+/* PARTICLES */
+
+canvas {
+  display: block;
+
+} /* ---- particles.js container ---- */
+#particles-js {
   background-color: #000000;
   height: 102vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 5;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
   margin-top: -4rem;
-}
-
-.hero:hover::before {
-  opacity: 1;
-}
-
-.hero::before {
-  background: radial-gradient(
-    300px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(192, 183, 183, 0.651), transparent 90%);
-  content: '';
-  border-radius: inherit;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
+  padding: 0;
+  z-index:2;
+} /* ---- stats.js ---- */
+.count-particles {
+  background: transparent;
   position: absolute;
-  opacity: 0;
-  transition: opacity 500ms;
-  z-index: 7;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
+
+#stats,
+.count-particles {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+/* --- */
 
 .centered-box {
 	width: 100%;
 	text-align: center;
-  font-size: 8rem;
+  font-size: 6rem;
   color: white;
   font-family: heroFont;
   z-index: 10;
@@ -226,6 +248,12 @@ h2 {
 .cursor {
 	border-left: 4px solid white;
 }
+
+.edit-price {
+  color:white;
+  font-size: larger;
+}
+
 
 
 
@@ -321,6 +349,19 @@ h2 {
   font-family: "Rubik", sans-serif;
 }
 
+.price-item-box-long {
+  width: 92%;
+  padding: 3rem;
+  padding-top: 1rem;
+  margin: 0 auto;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+
+}
+
   .price-item {
     display: flex;
     flex-direction: column;
@@ -347,6 +388,11 @@ h2 {
     color: rgba(255, 255, 255, 0.64);
   }
 
+  .price-item-box-long p {
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.64);
+  }
+
 
   .svg {
     width: 30px;
@@ -359,7 +405,8 @@ h2 {
 
   .once-model h3,
   .bonus-model h3,
-  .subs-model h3 {
+  .subs-model h3,
+  .price-item-box-long h3 {
     text-transform: uppercase;
     color: wheat;
   }
@@ -1069,6 +1116,12 @@ footer {
     margin: 1rem 0;
   }
 
+  .price-item-box-long {
+    margin-top: 2rem;
+    padding: 5px;
+    
+  }
+
 }
   
   @media (max-width: 480px) {
@@ -1081,13 +1134,15 @@ footer {
       right: 0;
       top: 0;
       padding-top: 0.2rem;
+      z-index: 1000;
     }
     .nav > .nav-btn > label {
       display: inline-block;
       width: 50px;
       height: 50px;
       padding: 13px;
-      z-index: 999;
+      position: relative;
+      z-index: 9990;
     }
   
     .nav > .nav-btn > label > span {
@@ -1162,7 +1217,6 @@ footer {
       height: 375px;
       background-color: rgb(8, 0, 0);
       position: absolute;
-      z-index: 1;
       top: 0;
       padding-top: 100px;
     }
