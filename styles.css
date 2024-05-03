@@ -28,6 +28,7 @@ section {
     margin: 0 auto;
     padding: 2rem 10%;
     width: stretch;
+    padding-bottom: 80px;
 }
 
 img {
@@ -56,6 +57,9 @@ h2 {
     margin-top: 2rem;
     font-family: heroFont;
     color: white;
+    position: relative;
+    z-index: 10;
+    text-align: center;
 }
 
 .h2-dark {
@@ -391,6 +395,7 @@ canvas {
   .price-item-box-long p {
     font-size: 1.1em;
     color: rgba(255, 255, 255, 0.64);
+    padding: 5px;
   }
 
 
@@ -566,16 +571,24 @@ canvas {
   margin: 1rem ;
   background-color: rgba(185, 185, 219, 0);
   border-radius: 10px;
-  
+  border: 1px solid rgb(61, 61, 61);
+  border-radius: 2rem;
 }
 .our-work-item p {
-  width: 65%;
+  width: 80%;
   font-size: 110%;
   font-weight: 400;
+  color: rgb(248, 239, 223);
+  margin: 0;
 }
 .our-work-item h4 {
   font-size: 1.5rem;
   color: wheat;
+}
+.our-work-item h5 {
+  font-size: 115%;
+  color: rgb(240, 227, 203);
+  align-self: flex-start;
 }
 .our-work-item > *  {
   margin: 1rem;
@@ -681,6 +694,8 @@ canvas {
 
 }
 
+
+
 footer {
   position: relative;
   z-index: 2;
@@ -728,7 +743,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
     position: relative;
     z-index: 2;
   }
@@ -921,7 +936,7 @@ footer {
   .our-work,
   .about-section {
     padding: 2rem 10px;
-   
+    padding-bottom: 50px;
   }
 
   .price-item-box {
@@ -1214,7 +1229,7 @@ footer {
         text-align: center;
     }
     .nav > #nav-check:checked ~ .nav-list {
-      height: 375px;
+      height: 420px;
       background-color: rgb(8, 0, 0);
       position: absolute;
       top: 0;
